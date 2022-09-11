@@ -1,0 +1,124 @@
+@import '../../global.scss';
+
+.header {
+    background-color: white;
+    transition: 1s;
+    z-index: 900;
+
+    .logo {
+
+        &-img {
+            transition: .5s;
+
+            &:active {
+                filter: grayscale(40%);
+            }
+
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    .menu {
+        display: flex;
+
+        .user{
+            list-style: none;
+            display: flex;
+            margin-left: 30px;
+            border-left: 2px solid $color;
+            padding: 0;
+
+            &-name {
+                color: red;
+                padding-left: 30px;
+                padding: 5px;
+                margin: 5px 15px;
+            }
+            &-log-out {
+
+            }
+        }
+
+        .ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            margin-right:0 45px 0 0;
+
+            .li {
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    display: block;
+                    padding: 5px;
+                    margin: 5px 15px;
+
+                    &:hover {
+                        border-bottom: 2px solid  $color;
+                        color:  $color;
+                    }
+                    &:active {
+                        color: $color;
+                    }
+                }
+                .active {
+                    border-bottom: 2px solid;
+                    color: $color;
+                }
+            }
+        }
+        .log-in-ul {
+            list-style: none;
+            display: flex;
+            margin: 0;          
+            .log-in-li {
+                a {
+                    text-decoration: none;
+                    color: black;
+                    
+                }
+                .log {
+                    border: 2px solid $color;
+                    border-radius: 0;
+                    margin: 0 3px;
+                    transition: .3s;
+                    color:black;
+
+                    &:hover {
+                        background-color: black;
+                        border: 2px solid black;
+
+                        color:  $color;
+                    }
+                }
+                .reg {
+                    border: 2px solid rgb(184, 176, 176);
+                    border-radius: 0;
+                    margin: 0 3px;
+                    transition: .3s;
+                    background-color: rgb(184, 176, 176);
+                    color: black;
+
+                    &:hover {
+                        background-color: black;
+                        border: 2px solid black;
+                        color: $color;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.top {
+    top: -50px;
+}
+.shadow {
+    box-shadow: 0 0 2px;
+    position: sticky;
+    top: 0;
+}

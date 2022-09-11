@@ -1,0 +1,118 @@
+@import '../../../../global.scss';
+
+.product-item {    
+    .main {
+        margin-bottom: 35px;
+
+        .left {
+            .product-item {
+                .slider {
+                    margin: 0 auto;
+                    width: 730px;
+                    height: 500px;
+                    border-radius: 8px;
+                    overflow: hidden;
+    
+                    &-image {
+                        width: 730px;
+                        height: 500px;
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-color: black;
+                    }
+                }
+
+                &-info {
+                    padding: 15px 5px;
+
+                    &-title {
+                        margin-bottom: 6px;
+                        font-size: 25px;
+                        font-weight: 500;                        
+                    }
+
+                    &-description {
+                        padding: 7px;
+                        font-size: 14px;
+                        color: #6a6969;                        
+                    }
+
+                    &-price {
+                        font-size: 25px;
+                        font-weight: bold;
+                    }
+
+                    &-created {
+                        font-size: 15px;
+                        color: grey;
+                    }
+                }
+            }
+        }
+
+        .right {
+            padding: 15px 5px;
+            border: 1px solid grey;
+            border-radius: 8px;
+
+            &-title {
+                font-size: 18px;
+                color: $color;
+                font-weight: 700;
+            }
+
+            .similar-products {
+                display: flex;
+                background-color: $cardBackgroundColor;
+                margin: 15px 0;
+                cursor: pointer;
+
+                &:hover {
+                    .similar-products{
+
+                        &-image {
+                            filter: brightness(93%);
+                        }
+                    
+                        &-info {
+                            &-title {
+                                color: black;
+                            }
+                        }   
+                    }                  
+                }
+
+                &-image {
+                    min-width: 170px;
+                    height: 85px;
+                    background-color: black;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    border-radius: 8px;
+                    transition: .2s;
+                }
+
+                &-info {
+                    font-size: 13px;
+                    padding-left: 10px;
+                    
+                    &-title{
+                        margin-bottom: 3px;
+                        overflow: hidden;
+                        height: 60px;
+                        color:#6a6969;
+                        transition: .2s;
+                    }
+
+                    &-price{
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

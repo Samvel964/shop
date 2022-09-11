@@ -1,0 +1,17 @@
+.drop {
+    button{
+        min-width:160px;
+        &:hover {
+            color: black;
+        }
+        &:focus {
+            color: black;
+        }
+    }
+    .dropdown-menu {
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+}

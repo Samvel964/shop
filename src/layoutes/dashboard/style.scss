@@ -1,0 +1,34 @@
+.dashboardLayout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    transition: .5s;
+}
+.small {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 53px;
+    transition: .5s;
+}
+
+.outlet {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 250px);
+    overflow-y: scroll;
+    height: 100vh;
+    transition: .5s;
+}
+
+.small-outlet {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 53px);
+    overflow-y: scroll;
+    height: 100vh;
+    transition: .5s;
+}

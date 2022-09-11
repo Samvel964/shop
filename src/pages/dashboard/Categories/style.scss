@@ -1,0 +1,16 @@
+.categories{
+    padding: 0 15px;
+
+    .add {
+        margin-left: auto;
+        display: table;
+    }
+
+    tbody {
+        tr {
+            button {
+                color: black;
+            }
+        }
+    }
+}
